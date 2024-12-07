@@ -74,3 +74,7 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
+vim.keymap.set('i', 'jk', '<Esc>', { noremap = true , silent = true})
+
+-- Remap <leader>w to save the current file
+vim.keymap.set("n", "<leader>w", ":w<CR>", { noremap = true, silent = true })
